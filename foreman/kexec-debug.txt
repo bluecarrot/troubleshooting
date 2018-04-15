@@ -1,0 +1,506 @@
+[root@fdi tmp]# kexec -d --force --reset-vga --append="ks=http://sg-foreman.local:8000/unattended/provision?token=67e7eb77-0004-46f6-91c7-2284b5ebe523&static=yes inst.ks.sendmac ip=172.20.31.218::172.20.31.1:255.255.255.0:::none nameserver=172.20.31.214 ksdevice=bootif BOOTIF=00-00-50-56-89-d6-bc nomodeset" --initrd=/tmp/initrd.img /tmp/vmlinuz
+Try gzip decompression.
+Try LZMA decompression.
+lzma_decompress_file: read on /tmp/vmlinuz of 65536 bytes failed
+kernel: 0x7fe3c14ec010 kernel_size: 0x5246d0
+MEMORY RANGES
+0000000000000100-000000000009f7ff (0)
+000000000009f800-000000000009ffff (1)
+00000000000dc000-00000000000fffff (1)
+0000000000100000-000000007feeffff (0)
+000000007fef0000-000000007fefefff (2)
+000000007feff000-000000007fefffff (3)
+000000007ff00000-000000007fffffff (0)
+00000000f0000000-00000000f7ffffff (1)
+00000000fec00000-00000000fec0ffff (1)
+00000000fee00000-00000000fee00fff (1)
+00000000fffe0000-00000000ffffffff (1)
+sym: sha256_starts info: 12 other: 00 shndx: 1 value: 10d0 size: 48
+sym: sha256_starts value: 7fff80d0 addr: 7fff7004
+R_X86_64_64
+sym: sha256_update info: 12 other: 00 shndx: 1 value: 3c80 size: 1a
+sym: sha256_update value: 7fffac80 addr: 7fff700f
+R_X86_64_64
+sym: sha256_regions info: 11 other: 00 shndx: 8 value: 20 size: 100
+sym: sha256_regions value: 7fffc020 addr: 7fff701a
+R_X86_64_64
+sym: sha256_regions info: 11 other: 00 shndx: 8 value: 20 size: 100
+sym: sha256_regions value: 7fffc120 addr: 7fff7044
+R_X86_64_64
+sym: sha256_finish info: 12 other: 00 shndx: 1 value: 3ca0 size: 1a4
+sym: sha256_finish value: 7fffaca0 addr: 7fff705b
+R_X86_64_64
+sym: sha256_digest info: 11 other: 00 shndx: 8 value: 0 size: 20
+sym: sha256_digest value: 7fffc000 addr: 7fff706c
+R_X86_64_64
+sym:     memcmp info: 12 other: 00 shndx: 1 value: 59b size: 21
+sym: memcmp value: 7fff759b addr: 7fff7079
+R_X86_64_64
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .rodata.str1.1 value: 7fffaf60 addr: 7fff708f
+R_X86_64_64
+sym:     printf info: 12 other: 00 shndx: 1 value: 4bc size: a0
+sym: printf value: 7fff74bc addr: 7fff709b
+R_X86_64_64
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .rodata.str1.1 value: 7fffaf80 addr: 7fff70a7
+R_X86_64_64
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .rodata.str1.1 value: 7fffaf90 addr: 7fff70be
+R_X86_64_64
+sym:     printf info: 12 other: 00 shndx: 1 value: 4bc size: a0
+sym: printf value: 7fff74bc addr: 7fff70c8
+R_X86_64_64
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .rodata.str1.1 value: 7fffaf96 addr: 7fff70da
+R_X86_64_64
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .rodata.str1.1 value: 7fffaf98 addr: 7fff70eb
+R_X86_64_64
+sym: sha256_digest info: 11 other: 00 shndx: 8 value: 0 size: 20
+sym: sha256_digest value: 7fffc000 addr: 7fff70fa
+R_X86_64_64
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .rodata.str1.1 value: 7fffaf90 addr: 7fff710e
+R_X86_64_64
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .rodata.str1.1 value: 7fffaf96 addr: 7fff7122
+R_X86_64_64
+sym:     printf info: 12 other: 00 shndx: 1 value: 4bc size: a0
+sym: printf value: 7fff74bc addr: 7fff712c
+R_X86_64_64
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .rodata.str1.1 value: 7fffafa8 addr: 7fff7149
+R_X86_64_64
+sym:     printf info: 12 other: 00 shndx: 1 value: 4bc size: a0
+sym: printf value: 7fff74bc addr: 7fff7155
+R_X86_64_64
+sym: setup_arch info: 12 other: 00 shndx: 1 value: 762 size: 3a
+sym: setup_arch value: 7fff7762 addr: 7fff7162
+R_X86_64_64
+sym: verify_sha256_digest info: 12 other: 00 shndx: 1 value: 0 size: 147
+sym: verify_sha256_digest value: 7fff7000 addr: 7fff716e
+R_X86_64_64
+sym: post_verification_setup_arch info: 12 other: 00 shndx: 1 value: 7d4 size: 3b
+sym: post_verification_setup_arch value: 7fff77d4 addr: 7fff7181
+R_X86_64_64
+sym:    putchar info: 12 other: 00 shndx: 1 value: d57 size: 143
+sym: putchar value: 7fff7d57 addr: 7fff71c9
+R_X86_64_64
+sym:    putchar info: 12 other: 00 shndx: 1 value: d57 size: 143
+sym: putchar value: 7fff7d57 addr: 7fff720b
+R_X86_64_64
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .rodata.str1.1 value: 7fffafba addr: 7fff72d6
+R_X86_64_64
+sym:    putchar info: 12 other: 00 shndx: 1 value: d57 size: 143
+sym: putchar value: 7fff7d57 addr: 7fff73da
+R_X86_64_64
+sym:   vsprintf info: 12 other: 00 shndx: 1 value: 18b size: 29b
+sym: vsprintf value: 7fff718b addr: 7fff74aa
+R_X86_64_64
+sym:   vsprintf info: 12 other: 00 shndx: 1 value: 18b size: 29b
+sym: vsprintf value: 7fff718b addr: 7fff754a
+R_X86_64_64
+sym:    entry32 info: 10 other: 00 shndx: 1 value: 5c0 size: 0
+sym: entry32 value: 7fff75bc addr: 7fff75cd
+R_X86_64_PC32
+sym:    entry32 info: 10 other: 00 shndx: 1 value: 5c0 size: 0
+sym: entry32 value: 7fff75bc addr: 7fff75e2
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffc13c addr: 7fff75fd
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffc11c addr: 7fff7604
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffae74 addr: 7fff760a
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffc18c addr: 7fff7610
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffae4c addr: 7fff7616
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaee1 addr: 7fff7649
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaef0 addr: 7fff7650
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaefb addr: 7fff7657
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaf06 addr: 7fff765e
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaf11 addr: 7fff7665
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaf1c addr: 7fff766c
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaf27 addr: 7fff7673
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaf16 addr: 7fff767a
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffc251 addr: 7fff7681
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaf0c addr: 7fff7693
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaf3c addr: 7fff76a9
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffae7c addr: 7fff76bc
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffae84 addr: 7fff76c3
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffae8c addr: 7fff76ca
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffae94 addr: 7fff76d1
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffae9c addr: 7fff76d8
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaea4 addr: 7fff76df
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaeac addr: 7fff76e6
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaeb4 addr: 7fff76ed
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaebc addr: 7fff76f4
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaec4 addr: 7fff76fb
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaecc addr: 7fff7702
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaed4 addr: 7fff7709
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaedc addr: 7fff7710
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaee4 addr: 7fff7717
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaeec addr: 7fff771e
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaef4 addr: 7fff7725
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaefc addr: 7fff772b
+R_X86_64_PC32
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaf3c addr: 7fff7733
+R_X86_64_PC32
+sym: jump_back_entry info: 11 other: 00 shndx: 8 value: 2008 size: 8
+sym: jump_back_entry value: 7fffe004 addr: 7fff774d
+R_X86_64_PC32
+sym:       .bss info: 03 other: 00 shndx: a value: 0 size: 0
+sym: .bss value: 7ffffffc addr: 7fff7754
+R_X86_64_PC32
+sym:  purgatory info: 12 other: 00 shndx: 1 value: 147 size: 44
+sym: purgatory value: 7fff7143 addr: 7fff7759
+R_X86_64_PC32
+sym:    entry64 info: 10 other: 00 shndx: 1 value: 690 size: 0
+sym: entry64 value: 7fff768c addr: 7fff775e
+R_X86_64_PC32
+sym:  reset_vga info: 11 other: 00 shndx: 8 value: 2012 size: 1
+sym: reset_vga value: 7fffe012 addr: 7fff7764
+R_X86_64_64
+sym: x86_reset_vga info: 12 other: 00 shndx: 1 value: e9a size: 1fb
+sym: x86_reset_vga value: 7fff7e9a addr: 7fff7774
+R_X86_64_64
+sym: legacy_pic info: 11 other: 00 shndx: 8 value: 2011 size: 1
+sym: legacy_pic value: 7fffe011 addr: 7fff7780
+R_X86_64_64
+sym: x86_setup_legacy_pic info: 12 other: 00 shndx: 1 value: 1095 size: 31
+sym: x86_setup_legacy_pic value: 7fff8095 addr: 7fff7790
+R_X86_64_64
+sym: cmdline_end info: 11 other: 00 shndx: 8 value: 2000 size: 8
+sym: cmdline_end value: 7fffe000 addr: 7fff779e
+R_X86_64_64
+sym: jump_back_entry info: 11 other: 00 shndx: 8 value: 2008 size: 8
+sym: jump_back_entry value: 7fffe008 addr: 7fff77b0
+R_X86_64_64
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .rodata.str1.1 value: 7fffafcb addr: 7fff77ba
+R_X86_64_64
+sym:    sprintf info: 12 other: 00 shndx: 1 value: 426 size: 96
+sym: sprintf value: 7fff7426 addr: 7fff77c7
+R_X86_64_64
+sym: panic_kernel info: 11 other: 00 shndx: 8 value: 2010 size: 1
+sym: panic_kernel value: 7fffe010 addr: 7fff77d6
+R_X86_64_64
+sym: crashdump_backup_memory info: 12 other: 00 shndx: 1 value: c73 size: 3e
+sym: crashdump_backup_memory value: 7fff7c73 addr: 7fff77e6
+R_X86_64_64
+sym: jump_back_entry info: 11 other: 00 shndx: 8 value: 2008 size: 8
+sym: jump_back_entry value: 7fffe008 addr: 7fff77f2
+R_X86_64_64
+sym: x86_setup_jump_back_entry info: 12 other: 00 shndx: 1 value: 79c size: 38
+sym: x86_setup_jump_back_entry value: 7fff779c addr: 7fff7803
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe047 addr: 7fff7827
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe04f addr: 7fff782d
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe075 addr: 7fff784d
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe07f addr: 7fff7853
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe089 addr: 7fff7859
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe093 addr: 7fff785f
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe076 addr: 7fff7866
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe08d addr: 7fff786d
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe06d addr: 7fff7937
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe075 addr: 7fff793d
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe09b addr: 7fff795d
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe0a5 addr: 7fff7963
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe0af addr: 7fff7969
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe0b9 addr: 7fff796f
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe0e2 addr: 7fff79b2
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe12b addr: 7fff79f5
+R_X86_64_PC32
+sym: backup_src_start info: 11 other: 00 shndx: 8 value: 2078 size: 8
+sym: backup_src_start value: 7fffe078 addr: 7fff7c75
+R_X86_64_64
+sym: backup_src_size info: 11 other: 00 shndx: 8 value: 2070 size: 8
+sym: backup_src_size value: 7fffe070 addr: 7fff7c82
+R_X86_64_64
+sym: backup_start info: 11 other: 00 shndx: 8 value: 2080 size: 8
+sym: backup_start value: 7fffe080 addr: 7fff7c94
+R_X86_64_64
+sym:     memcpy info: 12 other: 00 shndx: 1 value: 583 size: 18
+sym: memcpy value: 7fff7583 addr: 7fff7ca6
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe088 addr: 7fff7cb3
+R_X86_64_64
+sym: serial_base info: 11 other: 00 shndx: 8 value: 2090 size: 2
+sym: serial_base value: 7fffe090 addr: 7fff7cc1
+R_X86_64_64
+sym: serial_baud info: 11 other: 00 shndx: 8 value: 208c size: 4
+sym: serial_baud value: 7fffe08c addr: 7fff7cfb
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe088 addr: 7fff7d2f
+R_X86_64_64
+sym: console_vga info: 11 other: 00 shndx: 8 value: 2093 size: 1
+sym: console_vga value: 7fffe093 addr: 7fff7d5a
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe098 addr: 7fff7d70
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe098 addr: 7fff7dd5
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe094 addr: 7fff7dea
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe098 addr: 7fff7df9
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe098 addr: 7fff7e0c
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe094 addr: 7fff7e18
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe094 addr: 7fff7e3c
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe094 addr: 7fff7e4f
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe098 addr: 7fff7e61
+R_X86_64_64
+sym: console_serial info: 11 other: 00 shndx: 8 value: 2092 size: 1
+sym: console_serial value: 7fffe092 addr: 7fff7e6b
+R_X86_64_64
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff7cb1 addr: 7fff7e7d
+R_X86_64_64
+sym: sha256_process info: 12 other: 00 shndx: 1 value: 1120 size: 2a2d
+sym: sha256_process value: 7fff8120 addr: 7fffaba7
+R_X86_64_64
+sym:     memcpy info: 12 other: 00 shndx: 1 value: 583 size: 18
+sym: memcpy value: 7fff7583 addr: 7fffac04
+R_X86_64_64
+sym: sha256_process info: 12 other: 00 shndx: 1 value: 1120 size: 2a2d
+sym: sha256_process value: 7fff8120 addr: 7fffac39
+R_X86_64_64
+sym:     memcpy info: 12 other: 00 shndx: 1 value: 583 size: 18
+sym: memcpy value: 7fff7583 addr: 7fffac4e
+R_X86_64_64
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fffab50 addr: 7fffac87
+R_X86_64_64
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fffab50 addr: 7fffad1f
+R_X86_64_64
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffe0a0 addr: 7fffad29
+R_X86_64_64
+sym:    entry16 info: 10 other: 00 shndx: 1 value: 810 size: 0
+sym: entry16 value: 7fff7810 addr: 7fffae78
+R_X86_64_64
+sym:    entry32 info: 10 other: 00 shndx: 1 value: 5c0 size: 0
+sym: entry32 value: 7fff75c0 addr: 7fffaf00
+R_X86_64_64
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaf10 addr: 7fffaf12
+R_X86_64_64
+sym:    .rodata info: 03 other: 00 shndx: 3 value: 0 size: 0
+sym: .rodata value: 7fffaf40 addr: 7fffaf42
+R_X86_64_64
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff7000 addr: 7fffb008
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff7147 addr: 7fffb040
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff718b addr: 7fffb070
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff7426 addr: 7fffb0c0
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff74bc addr: 7fffb0e0
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff755c addr: 7fffb118
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff756f addr: 7fffb130
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff7583 addr: 7fffb148
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff759b addr: 7fffb160
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff7762 addr: 7fffb190
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff779c addr: 7fffb1b0
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff77d4 addr: 7fffb1c8
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff7c73 addr: 7fffb200
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff7cb1 addr: 7fffb230
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff7d57 addr: 7fffb250
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff7e9a addr: 7fffb298
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff8095 addr: 7fffb2c8
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff80d0 addr: 7fffb2f8
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fff8120 addr: 7fffb310
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fffab50 addr: 7fffb358
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fffac80 addr: 7fffb3c0
+R_X86_64_PC32
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 7fffaca0 addr: 7fffb3d8
+R_X86_64_PC32
+sym:      .data info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .data value: 7fffc120 addr: 7fffc122
+R_X86_64_64
+Loaded purgatory at addr 0x7fff7000
+Loaded real_mode_data and command line at 0x7fff2000
+kernel init_size 0x13c0000
+Loaded 64bit kernel at 0x7e000000
+Loaded initrd at 0x7b6a2000 size 0x295d008
+E820 memmap:
+0000000000000100-000000000009f7ff (1)
+000000000009f800-000000000009ffff (2)
+00000000000dc000-00000000000fffff (2)
+0000000000100000-000000007feeffff (1)
+000000007fef0000-000000007fefefff (3)
+000000007feff000-000000007fefffff (4)
+000000007ff00000-000000007fffffff (1)
+00000000f0000000-00000000f7ffffff (2)
+00000000fec00000-00000000fec0ffff (2)
+00000000fee00000-00000000fee00fff (2)
+00000000fffe0000-00000000ffffffff (2)
+/sys/firmware/edd does not exist.
+kexec_load: entry = 0x7fff7730 flags = 0x3e0000
+nr_segments = 4
+segment[0].buf   = 0x7fe3beb8e010
+segment[0].bufsz = 0x295d008
+segment[0].mem   = 0x7b6a2000
+segment[0].memsz = 0x295e000
+segment[1].buf   = 0x7fe3c14f0210
+segment[1].bufsz = 0x5204d0
+segment[1].mem   = 0x7e000000
+segment[1].memsz = 0x13c0000
+segment[2].buf   = 0x1be65e0
+segment[2].bufsz = 0x433d
+segment[2].mem   = 0x7fff2000
+segment[2].memsz = 0x5000
+segment[3].buf   = 0x1bdf4f0
+segment[3].bufsz = 0x70e0
+segment[3].mem   = 0x7fff7000
+segment[3].memsz = 0x9000
